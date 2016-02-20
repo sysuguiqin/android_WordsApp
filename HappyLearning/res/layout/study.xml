@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/studybackground">
+
+    <TextView
+        android:id="@+id/senglishtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/schinesetv"
+        android:layout_centerVertical="true"
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/sreaderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saccenttv"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginRight="28dp"
+        android:src="@drawable/reader" />
+
+    <Button
+        android:id="@+id/sexitzBtn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sgoonBtn"
+        android:layout_alignBottom="@+id/sgoonBtn"
+        android:layout_alignRight="@+id/sreaderBtn"
+        android:text="Exit" />
+
+    <TextView
+        android:id="@+id/swordtv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/schinesetv"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/sreturnBtn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/senglsentv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:text="Return" />
+
+    <Button
+        android:id="@+id/sgoonBtn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sreturnBtn"
+        android:layout_alignBottom="@+id/sreturnBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/schinesetv"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sreaderBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/saccenttv"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/schinesetv"
+        android:layout_below="@+id/swordtv"
+        android:layout_marginTop="16dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/senglsentv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/senglishtv"
+        android:layout_below="@+id/senglishtv"
+        android:layout_marginTop="61dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

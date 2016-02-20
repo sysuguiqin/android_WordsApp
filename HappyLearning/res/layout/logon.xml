@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbackground" >
+
+    <ImageButton
+        android:id="@+id/exitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/visitbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/exist" />
+
+    <EditText
+        android:id="@+id/counted"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/swordtv"
+        android:layout_toRightOf="@+id/swordtv"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/visitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exitbtn"
+        android:layout_alignRight="@+id/passworded"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/visit" />
+
+    <ImageButton
+        android:id="@+id/logonbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saccenttv"
+        android:layout_alignTop="@+id/exitbtn"
+        android:src="@drawable/enroll" />
+
+    <ImageButton
+        android:id="@+id/registerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/logonbtn"
+        android:layout_alignTop="@+id/visitbtn"
+        android:src="@drawable/register" />
+
+    <EditText
+        android:id="@+id/passworded"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/saccenttv"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/saccenttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/passworded"
+        android:layout_toLeftOf="@+id/counted"
+        android:text="密码："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/swordtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passworded"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="28dp"
+        android:text="账号："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

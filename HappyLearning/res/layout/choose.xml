@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/mainbackground">
+
+    <ImageButton
+        android:id="@+id/personbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gamebtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:src="@drawable/personbtn" />
+
+    <ImageButton
+        android:id="@+id/gamebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/personbtn"
+        android:layout_alignLeft="@+id/studybtn"
+        android:src="@drawable/gamebtn" />
+
+    <Button
+        android:id="@+id/mexitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginRight="32dp"
+        android:text="退出程序" />
+
+    <ImageButton
+        android:id="@+id/studybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gamebtn"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/studybtn" />
+
+</RelativeLayout>
